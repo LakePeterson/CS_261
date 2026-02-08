@@ -7,7 +7,7 @@
 
 #include "stack.h"
 
-int main(int argc, char** argv) {
+int main(void) {
   int simtop, i, n = 16, k_pop = 4, k_push = 8;
   int* test_data;
   int** simstack;
@@ -46,8 +46,8 @@ int main(int argc, char** argv) {
     if (top && popped) {
       printf("  - %4d / %4d (%4d)\n", *top, *popped, *expected);
     } else {
-      printf("  - top (%p) or popped (%p) is NULL (expected: %4d)\n", top,
-        popped, *expected);
+      printf("  - top (%p) or popped (%p) is NULL (expected: %4d)\n", (void*)top,
+        (void*)popped, *expected);
     }
   }
 
@@ -72,8 +72,8 @@ int main(int argc, char** argv) {
     if (top && popped) {
       printf("  - %4d / %4d (%4d)\n", *top, *popped, *expected);
     } else {
-      printf("  - top (%p) or popped (%p) is NULL (expected: %4d)\n", top,
-        popped, *expected);
+      printf("  - top (%p) or popped (%p) is NULL (expected: %4d)\n", (void*)top,
+        (void*)popped, *expected);
     }
   }
 

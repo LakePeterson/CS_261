@@ -1,4 +1,4 @@
- /*
+/*
  * This file is where you should implement your linked list.  It already
  * contains skeletons of the functions you need to implement (along with
  * documentation for each function).  Feel free to implement any additional

@@ -155,7 +155,7 @@ void dynarray_remove(struct dynarray* da, int idx) {
 void* dynarray_get(struct dynarray* da, int idx)
 {
   assert(da);
-  //assert(idx < da->size && idx >= 0);
+  assert(idx < da->size && idx >= 0);
 
   return da->data[idx];
 }

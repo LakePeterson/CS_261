@@ -1,0 +1,32 @@
+# Compiled object files
+*.o
+*.obj
+
+# Compiled binaries
+*.exe
+*.out
+
+# Program binaries (Linux/Mac builds without extension)
+Program_1/test_dynarray
+Program_1/test_list
+Program_2/test_stack
+Program_2/test_queue
+Program_3/test_bst
+Program_4/test_pq
+
+# Debug symbols
+*.dSYM/
+*.pdb
+
+# macOS
+.DS_Store
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Claude Code
+.claude/

@@ -206,6 +206,7 @@ void* topVal(struct list* list)
   {
     return list->head->val;
   }
+  return NULL;
 }
 
 int isEmpty(struct list* list)

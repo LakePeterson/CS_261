@@ -43,7 +43,7 @@ int cmp_ints(const void* a, const void* b) {
   return *(int*)a - *(int*)b;
 }
 
-int main(int argc, char** argv) {
+int main(void) {
   /*
    * Create a new BST and insert the testing data into it.  The testing data
    * is inserted in such a way that the value is equal to the address of the

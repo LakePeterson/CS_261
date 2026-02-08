@@ -93,14 +93,13 @@ void test_list(struct student** students, int n) {
     printf("%d\n", p);
   }
 
-
   printf("\nFreeing list... ");
   fflush(stdout);
   list_free(list);
   printf("OK (check valgrind output to ensure no memory leaks)\n");
 }
 
-int main(int argc, char** argv) {
+int main(void) {
   struct student** students;
   int i;
 

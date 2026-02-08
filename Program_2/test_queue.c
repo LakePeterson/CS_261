@@ -7,7 +7,7 @@
 
 #include "queue.h"
 
-int main(int argc, char** argv) {
+int main(void) {
   int simfront, simback, i, n = 16, k_deq = 4, k_enq = 8;
   int* test_data;
   int** simqueue;
@@ -47,8 +47,8 @@ int main(int argc, char** argv) {
     if (front && dequeued) {
       printf("  - %4d / %4d (%4d)\n", *front, *dequeued, *expected);
     } else {
-      printf("  - front (%p) or dequeued (%p) is NULL (expected: %4d)\n", front,
-        dequeued, *expected);
+      printf("  - front (%p) or dequeued (%p) is NULL (expected: %4d)\n", (void*)front,
+        (void*)dequeued, *expected);
     }
   }
 
@@ -73,8 +73,8 @@ int main(int argc, char** argv) {
     if (front && dequeued) {
       printf("  - %4d / %4d (%4d)\n", *front, *dequeued, *expected);
     } else {
-      printf("  - front (%p) or dequeued (%p) is NULL (expected: %4d)\n", front,
-        dequeued, *expected);
+      printf("  - front (%p) or dequeued (%p) is NULL (expected: %4d)\n", (void*)front,
+        (void*)dequeued, *expected);
     }
   }
 

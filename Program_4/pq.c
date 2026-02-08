@@ -275,7 +275,8 @@ void* pq_remove_first(struct pq* pq)
   dynarray_remove(pq->array, lastChild);
   fixArray(pq, 0);
 
+  void* value = firstElementVal->value;
   free(firstElementVal);
 
-  return firstElementVal->value;
+  return value;
 }

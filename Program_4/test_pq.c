@@ -17,7 +17,7 @@ int ascending_int_cmp(const void * a, const void * b) {
 }
 
 
-int main(int argc, char** argv) {
+int main(void) {
   struct pq* pq;
   int* first, * removed;
   int i, k, p;

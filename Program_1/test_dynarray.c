@@ -16,7 +16,7 @@ void test_dynarray(struct student** students, int n)
 {
   struct dynarray* da;
   struct student* repl, * s;
-  int i, k, n_removed = 0;
+  int i, n_removed = 0;
 
   /*
    * Create a dynamic array.
@@ -140,7 +140,7 @@ void test_dynarray(struct student** students, int n)
   printf("OK (check valgrind output to ensure no memory leaks)\n");
 }
 
-int main(int argc, char** argv)
+int main(void)
 {
   struct student** students;
   int i;

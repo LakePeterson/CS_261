@@ -103,6 +103,7 @@ void* stack_top(struct stack* stack)
   {
     return topVal(stack->list);
   }
+  return NULL;
 }
 
 /*
